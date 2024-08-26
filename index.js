@@ -1,7 +1,11 @@
 const express = require('express');
 const app = express();
 
+const checkCamelCase = "camel case";
+const CheckPascalCase = "pascal case";
+
 app.get('/', (req, res) => {
+    console.log("checking logs not allowed rule");    
     res.send('Hello, World!');
 });
 
