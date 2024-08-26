@@ -1,0 +1,10 @@
+id: consistent-variable-naming
+language: javascript
+message: "Ensure variable names are written in camelCase. Avoid using underscores or all uppercase for variable names."
+rule:
+  pattern: $VAR
+  constraints:
+    VAR:
+      regex: "[a-z][a-zA-Z0-9]*" # Simple camelCase check
+      not:
+        regex: "[A-Z_]" # Disallow uppercase or underscores
