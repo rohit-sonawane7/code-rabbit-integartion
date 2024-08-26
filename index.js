@@ -5,7 +5,8 @@ const checkCamelCase = "camel case";
 const CheckPascalCase = "pascal case";
 
 app.get('/', (req, res) => {
-    console.log("checking logs not allowed rule");    
+    console.log("checking logs not allowed rule");
+    console.log("checking new logs");
     res.send('Hello, World!');
 });
 
